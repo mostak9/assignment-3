@@ -42,9 +42,15 @@
         <!-- navigation bar -->
         <nav class="container mx-auto my-3 lg:my-12">
             <div class="navbar bg-base-100 lg:bg-primary lg:text-white md:p-12 rounded-[600px]">
-                <div class="navbar-start">
-                    <div class="dropdown lg:hidden">
-                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                <div class="navbar-start flex lg:hidden">
+                    <a class="btn btn-ghost normal-case text-xl flex gap-1">
+                        <img class="w-[50px]" src="./images/logo.png" alt="">
+                        <h2 class="text-4xl font-bold">Fruit Burst</h2>
+                    </a>
+                </div>
+                <div class="navbar-end flex lg:hidden">
+                    <div class="dropdown dropdown-end lg:hidden">
+                        <label tabindex="0" class="btn m-1 btn-ghost btn-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -73,7 +79,38 @@
                         <li class="list-none cursor-pointer"><a>All Fruits</a></li>
                     </div>
                 </div>
-                <div class="navbar-center">
+                <div class="navbar-start hidden lg:flex">
+                    <div class="dropdown dropdown-end lg:hidden">
+                        <label tabindex="0" class="btn m-1 btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <li><a>
+                                    <div class="relative flex items-center justify-end w-44">
+                                        <i class="fa-solid fa-magnifying-glass absolute text-white right-3"></i>
+                                        <input type="text" placeholder="Search here"
+                                            class="w-[400px] max-w-md border-none px-3 py-3 rounded-[50px] text-white bg-gray-400 placeholder-white" />
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:flex gap-7">
+                        <li class="list-none cursor-pointer"><a>Home</a></li>
+                        <li class="list-none cursor-pointer"><a>About Us</a></li>
+                        <li class="list-none cursor-pointer"><a>Shop</a></li>
+                        <li class="list-none cursor-pointer"><a>All Fruits</a></li>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
                     <a class="btn btn-ghost normal-case text-xl flex gap-1">
                         <img class="w-[50px]" src="./images/logo.png" alt="">
                         <h2 class="text-4xl font-bold">Fruit Burst</h2>
